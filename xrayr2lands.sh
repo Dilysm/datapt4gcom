@@ -58,10 +58,10 @@ makeConfig() {
   echo "---------------"
 	read -p "Nhập Subdomain của bạn :" subDomain
 	echo "---------------"
-	read -p "Nhập link website ( https://2lands.me ) :" airWebsite
- 	echo "---------------"
-	read -p "Nhập api :" airWebsitetype
-	echo "---------------"
+	# read -p "Nhập link website ( https://2lands.me ) :" airWebsite
+ 	# echo "---------------"
+	# read -p "Nhập type website :" airWebsitetype
+	# echo "---------------"
 	read -p "Số node ID 80 :" makeNodeID
 	echo "---------------"
     read -p "Nhập type node 80 (Vless: 0, Vmess: 1, Trojan: 2, Shadowsocks: 3, Shadowsocks-Plugin: 4) :" type80
@@ -89,8 +89,8 @@ Nodes:
   -
     PanelType: "AikoPanel" # Panel type: SSpanel, V2board, PMpanel, Proxypanel, V2RaySocks
     ApiConfig:
-      ApiHost: "$airWebsite"
-      ApiKey: "$airWebsitetype"
+      ApiHost: "https://datapt4g.com"
+      ApiKey: "duongdinhtai2004"
       NodeID: $makeNodeID
       NodeType: $type80 # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
@@ -153,8 +153,8 @@ Nodes:
   -
     PanelType: "AikoPanel" # Panel type: SSpanel, V2board, PMpanel, Proxypanel, V2RaySocks
     ApiConfig:
-      ApiHost: "$airWebsite"
-      ApiKey: "$airWebsitetype"
+      ApiHost: "https://datapt4g.com"
+      ApiKey: "duongdinhtai2004"
       NodeID: $makeNodeID443
       NodeType: $type443 # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
